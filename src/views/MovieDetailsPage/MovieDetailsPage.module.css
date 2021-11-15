@@ -1,0 +1,21 @@
+.MovieInfo {
+  display: flex;
+}
+.info {
+  margin-left: 15px;
+}
+.genres {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0%;
+}
+.gen {
+  margin-right: 10px;
+}
+.link {
+  text-decoration: none;
+  color: tomato;
+  cursor: pointer;
+}

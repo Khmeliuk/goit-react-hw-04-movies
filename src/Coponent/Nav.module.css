@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  list-style: none;
+  border-bottom: 3px solid wheat;
+}
+.text {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+}
+.active {
+  color: tomato;
+}
