@@ -16,11 +16,11 @@ export default function App() {
       <Nav />
       <Suspense fallback={<h3>download...</h3>}>
         <Switch>
-          <Route exact path="/" component={Home} />
           <Route path="/movies/:movieId" component={MovieDetailsPage} />
           <Route path="/movies" component={Movies} />
           <Route path="//movies/:movieId/cast" component={Cast} />
           <Route path="/movies/:movieId/reviews" component={Reviews} />
+          <Route exact path="/" component={Home} />
         </Switch>
       </Suspense>
     </>
