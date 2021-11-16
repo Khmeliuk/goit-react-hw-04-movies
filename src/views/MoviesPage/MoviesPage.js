@@ -2,7 +2,7 @@ import { useState } from "react";
 import API from "../../service/service";
 import { Link } from "react-router-dom";
 import { useHistory, useLocation } from "react-router";
-import { useEffect } from "react/cjs/react.development";
+import { useEffect } from "react";
 export default function Movies() {
   const [moviesList, setmoviesList] = useState(null);
 

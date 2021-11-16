@@ -1,7 +1,7 @@
 import { useParams } from "react-router";
 import { useState } from "react";
 import API from "../../service/service";
-import { useEffect } from "react/cjs/react.development";
+import { useEffect } from "react";
 import s from "./Cast.module.css";
 export default function Cast() {
   const [artist, setartist] = useState(null);

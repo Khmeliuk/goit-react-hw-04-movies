@@ -1,7 +1,7 @@
 import { Route, Switch } from "react-router-dom";
 import Home from "./views/Home/Home";
 import { lazy, Suspense } from "react";
-import Nav from "./Coponent/Nav";
+import Nav from "./Component/Nav";
 
 const MovieDetailsPage = lazy(() =>
   import("./views/MovieDetailsPage/MovieDetailsPage")

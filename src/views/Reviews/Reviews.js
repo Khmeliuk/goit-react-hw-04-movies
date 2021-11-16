@@ -1,7 +1,7 @@
 import API from "../../service/service";
 import { useState } from "react";
 import { useParams } from "react-router";
-import { useEffect } from "react/cjs/react.development";
+import { useEffect } from "react";
 export default function Reviews() {
   const [reviews, setreviews] = useState(null);
   const { movieId } = useParams();
