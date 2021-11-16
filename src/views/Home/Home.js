@@ -8,7 +8,7 @@ export default function Home() {
   const [treandMovie, settreandMovie] = useState(null);
 
   const location = useLocation();
-
+  console.log(location, "location");
   useEffect(() => service.trendMovies().then(settreandMovie), []);
 
   return (
