@@ -11,7 +11,7 @@ import { useLocation, useHistory } from "react-router";
 const MovieDetailsPage = () => {
   const [searchMovies, setsearchMovies] = useState(null);
   const params = useParams();
-  const march = useRouteMatch();
+  const { url } = useRouteMatch();
   const location = useLocation();
   const history = useHistory();
 
@@ -50,10 +50,22 @@ const MovieDetailsPage = () => {
           </div>
           <hr />
           <h3>Additional information</h3>
-          <NavLink className={s.link} to={`${march.url}/cast`}>
+          <NavLink
+            className={s.link}
+            to={{
+              pathname: `${url}/cast`,
+              state: { from: location?.state?.from ?? "" },
+            }}
+          >
             <p>Cast</p>
           </NavLink>
-          <NavLink className={s.link} to={`${march.url}/reviews`}>
+          <NavLink
+            className={s.link}
+            to={{
+              pathname: `${url}/Reviews`,
+              state: { from: location?.state?.from ?? "" },
+            }}
+          >
             Reviews
           </NavLink>
           <Route path="/movies/:movieId/cast">

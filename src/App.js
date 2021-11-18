@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import Home from "./views/Home/Home";
 import { lazy, Suspense } from "react";
 import Nav from "./Component/Nav";
@@ -21,7 +21,7 @@ export default function App() {
           <Route path="/movies" component={Movies} />
           <Route path="//movies/:movieId/cast" component={Cast} />
           <Route path="/movies/:movieId/reviews" component={Reviews} />
-          <Route component={Home} />
+          <Redirect to="/" />
         </Switch>
       </Suspense>
     </>
